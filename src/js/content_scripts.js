@@ -1,0 +1,1 @@
+console.log('Hello Google Plugin by content_scripts.js!');

@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "HelloGooglePlugin",
+    "description": "Google開発者ツールでHelloWorldをログに出すためだけのプラグイン",
+    "version": "1.0",
+
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*" ],
+        "js": ["js/content_scripts.js"]
+    }],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "browser_action": {
+        "default_title": "HelloGooglePlugin",
+         "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "background",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
